@@ -274,7 +274,8 @@ textarea {
    /* Hero Area */
 
    .hero-area {
-    background: url('../img/unplugged-retreat.jpg') center no-repeat #cccccc;
+    background: url('../img/unplugged-retreat.jpg');
+    background-position: center;
     background-size: cover;
     min-height: 500px;
     display: flex;
@@ -404,7 +405,7 @@ textarea {
    .map figure {
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 125%;
     overflow: hidden;
     position: relative;
    }
@@ -598,7 +599,7 @@ textarea {
     width: 30%;
   }
   header nav {
-    width: 20%;
+    width: 30%;
   }
 
   header nav ul {
@@ -669,7 +670,7 @@ textarea {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 35%;
+    width: 40%;
     margin: 0;
   }
 
@@ -690,6 +691,10 @@ textarea {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -826,7 +831,7 @@ textarea {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 30%;
   }
 
   .form-description p {
