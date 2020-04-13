@@ -150,11 +150,11 @@ textarea {
   }
 
   img {
-
+    width: 100%;
   }
 
   figure {
-
+    margin: 0;
   }
 
   address {
@@ -193,7 +193,11 @@ textarea {
    }
 
    header figure {
-
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
    }
 
    .header-divider {
@@ -210,6 +214,7 @@ textarea {
     flex-flow: row wrap;
     width: 60%;
     font-size: 1.125em;
+    font-weight: 700;
     text-transform: uppercase;
    }
 
@@ -243,9 +248,6 @@ textarea {
     margin-bottom: 50px;
    }
 
-   footer .social {
-   }
-
    footer .social-icons {
     display: flex;
     justify-content: space-around;
@@ -270,11 +272,12 @@ textarea {
    /* Hero Area */
 
    .hero-area {
+    background: url('../img/unplugged-retreat.jpg') center no-repeat #cccccc;
+    background-size: cover;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-image: url("img/jake-melara-30679-unsplash.jpg");
-    background-color: #cccccc;
    }
 
 
@@ -286,14 +289,6 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background: #527158;
-   }
-
-   aside .content-wrapper {
-
-   }
-
-   aside .form-description {
-
    }
 
    aside .form {
@@ -326,19 +321,16 @@ textarea {
   /* Features */
 
    .features {
+    background-image: url('../img/unplugged-retreat-features.jpg');
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-image: url("img/rawpixel-800820-unsplash1.jpg");
-    background-color: #cccccc;
    }
 
    .features h2 {
      margin-bottom: 60px;
-   }
-
-   .features .content-wrapper {
-
    }
 
    .features article {
@@ -376,10 +368,6 @@ textarea {
     background: #2a423a;
    }
 
-   .reviews article {
-
-   }
-
    .review h2 {
      margin-bottom: 40px;
      line-height: 1;
@@ -403,14 +391,6 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      background: #527158;
-   }
-
-   .mission .content-wrapper {
-
-   }
-
-   .mission .mission-content {
-
    }
 
 
@@ -651,7 +631,9 @@ textarea {
   =================================================================*/
 
   /* Hero Area */
-
+  .hero-area {
+    min-height: 600px;
+  }
 
   /* Aside */
   
@@ -697,6 +679,8 @@ textarea {
   .reviews h2 {
     width: 85%;
   }
+  
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -807,8 +791,12 @@ textarea {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 775;
+  }
+
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
   }
 
   /* Aside */
@@ -822,6 +810,9 @@ textarea {
     width: 30%;
   }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
 
   /* Features */
   
