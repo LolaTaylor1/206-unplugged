@@ -116,6 +116,8 @@ textarea {
   ul,
   ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   a {
@@ -127,6 +129,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
     font-weight: 500;
+    margin: 0;
   }
 
   h3,
@@ -235,6 +238,7 @@ textarea {
    footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
+    padding: 0;
    }
 
    footer .contact {
@@ -274,7 +278,7 @@ textarea {
    /* Hero Area */
 
    .hero-area {
-    background: url('../img/unplugged-retreat.jpg');
+    background: url(../img/unplugged-retreat.jpg);
     background-position: center;
     background-size: cover;
     min-height: 500px;
@@ -283,11 +287,16 @@ textarea {
     flex-flow: row wrap;
    }
 
+   .hero-area .content-wrapper {
+     margin: 50px 0;
+   }
+
    .hero-area h1 {
-      font-family: 'Poppins', Helverica, Arial, sans-serif;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
       font-size: 2.25em;
       font-weight: 500;
       line-height: 1.2;
+      margin: 0;
    }
 
   /* Aside */
@@ -593,6 +602,7 @@ textarea {
   header .content-wrapper{
     width: 100%;
     justify-content: space-between;
+    margin: 0;
   }
 
   header figure {
@@ -613,6 +623,7 @@ textarea {
   footer .content-wrapper {
     width: 65%;
     padding: 100px 0;
+    margin: 0;
   }
 
   .footer-content {
@@ -781,7 +792,24 @@ textarea {
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here */
 
-/*==============================================================
+/*=======================================================
+  Header & Footer Desktop Styles
+  =======================================================*/
+  header {
+    padding: 15px 0;
+  }
+
+  footer .content-wrapper {
+    padding: 100px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+    margin: 0 0 40px 0;
+  }
+
+
+  /*==============================================================
   General Desktop Styles
   ==============================================================*/
   .content-wrapper {
@@ -802,16 +830,6 @@ textarea {
     line-height: 1.333;
   }
 
-/*=======================================================
-  Header & Footer Desktop Styles
-  =======================================================*/
-  .header {
-    padding: 15px 0;
-  }
-
-  footer h4 {
-    font-size: 1.875em;
-  }
 /*=================================================================
   Home Page Desktop Styles
   =================================================================*/
@@ -843,13 +861,14 @@ textarea {
   .features h2 {
     width: 90%;
   }
+
   .features article {
     flex-basis: 33%;
   }
 
   /* Reviews */
 
-  .review h2 {
+  .reviews h2 {
     padding-bottom: 50px;
   }
 
